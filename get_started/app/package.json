@@ -1,0 +1,77 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "core-js": "^2.6.10",
+    "eslint": "^7.11.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "startw": "webpack-dev-server",
+    "serve": "webpack serve --mode development",
+    "buildw": "webpack --config webpack.config.js --mode production"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "edge": 17,
+            "firefox": 60,
+            "chrome": 67,
+            "safari": 11.1
+          },
+          "useBuiltIns": "usage"
+        }
+      ],
+      ["@babel/preset-react", {"runtime": "automatic"}]
+    ],
+    
+    "plugins": [
+        "@babel/plugin-proposal-class-properties"
+    ]
+  },
+
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.4.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1"
+  }
+}
