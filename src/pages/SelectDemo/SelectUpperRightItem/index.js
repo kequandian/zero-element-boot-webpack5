@@ -1,7 +1,7 @@
 import React from 'react';
 const AutoComponent = require('@/components/AutoComponent');
 
-const { Avatar, Title } = require('@/presenter/demo');
+const { Avatar, Title } = require('@/components/presenter');
 
 export default function SelectUpperRightItem(props) {
   const allComponents = {

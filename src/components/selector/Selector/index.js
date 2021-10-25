@@ -23,6 +23,8 @@ export default function Selector(props) {
 
   return React.Children.map(children, child => {
     const HoverIndicator = hoverIndicator
+    const SelectedIndicator = selectedIndicator
+    
     return <div onMouseEnter={() => toggleHover()} onMouseLeave={() => toggleHover()}>
       {onHover? (
         <HoverIndicator>
